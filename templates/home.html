@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome, {{name}}</title>
+    <script src="/script/home.js"></script>
+    <style>
+        body{
+            background-color: #252525;
+            color: white;
+            font-size: 30px;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        .pic{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        .greetpic{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+        }
+        .greet{
+            display: inline;
+            font-size: 60px;
+        }
+        .name{
+            display: inline;
+            font-size: 50px;
+
+        }
+        div{
+            border: #636363 3px solid;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+        }
+        #cool{
+            background-color: forestgreen;
+            color: white;
+            font-size: 20px;
+            padding: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        #postdiv{
+            background-color: aqua;
+        }
+        #post{
+            font-size: 20px;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 10px;
+            width: 300px;
+
+        }
+        #ok{
+            background-color: forestgreen;
+            color: white;
+            font-size: 20px;
+            padding: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <p id="token" style="position: absolute;opacity: 0;">{{token}}</p>
+    <img class="greetpic" src="/profilepic/{{token}}/{{name}}">
+    <h3 class = "greet">Welcome, {{name}}</h3>
+    
+    <br>
+    <div id="postdiv">
+        <input type="text" id="post" placeholder="Post">
+        <button id="ok">Post</button>
+        <button id="cool" onclick="location.reload();">Refresh</button>
+    </div>
+    
+    
+
+    
+</body>
+</html>
